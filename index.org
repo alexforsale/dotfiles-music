@@ -11,6 +11,9 @@
 #+exclude_tags: noexport
 #+creator: Emacs 29.4 (Org mode 9.8-pre)
 #+cite_export:
+#+startup: indent fold
+#+export_file_name: index.html
+#+setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 * Applications
 
