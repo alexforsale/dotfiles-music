@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-06 Wed 16:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>index</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Kristian Alexander P" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+</head>
+<body>
+<div id="content">
+<h1 class="title">index</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga402998">1. Applications</a>
+<ul>
+<li><a href="#orgeed43c5">1.1. MPD</a></li>
+<li><a href="#orgede7b60">1.2. ncmpcpp</a>
+<ul>
+<li><a href="#org245e5c4">1.2.1. config</a></li>
+<li><a href="#orgcb7de6c">1.2.2. bindings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga402998" class="outline-2">
+<h2 id="orga402998"><span class="section-number-2">1</span> Applications</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgeed43c5" class="outline-3">
+<h3 id="orgeed43c5"><span class="section-number-3">1.1</span> MPD</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Files and directories #######################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting controls the top directory which MPD will search to discover the</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">available audio files and add them to the daemon's online database. This</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">setting defaults to the XDG directory, otherwise the music directory will be</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">be disabled and audio files will only be accepted over ipc socket (using</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">file:// protocol) or streaming files over an accepted protocol.</span>
+<span style="color: #b22222;">#</span>
+music_directory         <span style="color: #bc8f8f;">"~/Music"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the MPD internal playlist directory. The purpose of this</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">directory is storage for playlists created by MPD. The server will use</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">playlist files not created by the server but only if they are in the MPD</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">format. This setting defaults to playlist saving being disabled.</span>
+<span style="color: #b22222;">#</span>
+playlist_directory              <span style="color: #bc8f8f;">"~/.config/mpd/playlists"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the location of the MPD database. This file is used to</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the database at server start up and store the database while the</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">server is not up. This setting defaults to disabled which will allow</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">MPD to accept files over ipc socket (using file:// protocol) or streaming</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">files over an accepted protocol.</span>
+<span style="color: #b22222;">#</span>
+db_file                 <span style="color: #bc8f8f;">"~/.local/share/mpd/database"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">These settings are the locations for the daemon log files for the daemon.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">The special value "syslog" makes MPD use the local syslog daemon. This</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">setting defaults to logging to syslog.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If you use systemd, do not configure a log_file.  With systemd, MPD</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">defaults to the systemd journal, which is fine.</span>
+<span style="color: #b22222;">#</span>
+log_file                        <span style="color: #bc8f8f;">"syslog"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the location of the file which stores the process ID</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">for use of mpd --kill and some init scripts. This setting is disabled by</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">default and the pid file will not be stored.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If you use systemd, do not configure a pid_file.</span>
+<span style="color: #b22222;">#</span>
+pid_file                        <span style="color: #bc8f8f;">"~/.local/share/mpd/pid"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the location of the file which contains information about</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">most variables to get MPD back into the same general shape it was in before</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">it was brought down. This setting is disabled by default and the server</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">state will be reset on server start up.</span>
+<span style="color: #b22222;">#</span>
+state_file                      <span style="color: #bc8f8f;">"~/.local/state/mpd/state"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">The location of the sticker database.  This is a database which</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">manages dynamic information attached to songs.</span>
+<span style="color: #b22222;">#</span>
+sticker_file                    <span style="color: #bc8f8f;">"~/.local/share/mpd/sticker.sql"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">General music daemon options ################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting specifies the user that MPD will run as. MPD should never run as</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">root and you may use this setting to make MPD change its user ID after</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">initialization. This setting is disabled by default and MPD is run as the</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">current user.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">user                           "nobody"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting specifies the group that MPD will run as. If not specified</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">primary group of user specified with "user" setting will be used (if set).</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This is useful if MPD needs to be a member of group such as "audio" to</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">have permission to use sound card.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">group                          "nogroup"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the address for the daemon to listen on. Careful attention</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">should be paid if this is assigned to anything other than the default, any.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting can deny access to control of the daemon. Not effective if</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">systemd socket activation is in use.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">For network</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">bind_to_address                "any"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">And for Unix Socket</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">bind_to_address                "~/.mpd/socket"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting is the TCP port that is desired for the daemon to get assigned</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">to.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">port                           "6600"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Suppress all messages below the given threshold.  Use "verbose" for</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">troubleshooting. Available setting arguments are "notice", "info", "verbose",</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">"warning" and "error".</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">log_level                      "notice"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Setting "restore_paused" to "yes" puts MPD into pause mode instead</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">of starting playback after startup.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">restore_paused "no"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting enables MPD to create playlists in a format usable by other</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">music players.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">save_absolute_paths_in_playlists       "no"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting defines a list of tag types that will be extracted during the</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">audio file discovery process. The complete list of possible values can be</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">found in the user manual.</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">metadata_to_use        "artist,album,title,track,name,genre,date,composer,performer,disc"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This example just enables the "comment" tag without disabling all</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">the other supported tags:</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">metadata_to_use "+comment"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting enables automatic update of MPD's database when files in</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">music_directory are changed.</span>
+<span style="color: #b22222;">#</span>
+auto_update     <span style="color: #bc8f8f;">"yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Limit the depth of the directories being watched, 0 means only watch</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">the music directory itself.  There is no limit by default.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">auto_update_depth "3"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Symbolic link behavior ######################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If this setting is set to "yes", MPD will discover audio files by following</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">symbolic links outside of the configured music_directory.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">follow_outside_symlinks        "yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If this setting is set to "yes", MPD will discover audio files by following</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">symbolic links inside of the configured music_directory.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">follow_inside_symlinks         "yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Zeroconf / Avahi Service Discovery ##########################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If this setting is set to "yes", service information will be published with</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Zeroconf / Avahi.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">zeroconf_enabled               "yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">The argument to this setting will be the Zeroconf / Avahi unique name for</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">this MPD server on the network. %h will be replaced with the hostname.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">zeroconf_name                  "Music Player @ %h"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Permissions #################################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If this setting is set, MPD will require password authorization. The password</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">setting can be specified multiple times for different password profiles.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">password                        "password@read,add,control,admin"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting specifies the permissions a user has who has not yet logged in.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">default_permissions             "read,add,control,admin"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Database #######################################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a database section instead of the old 'db_file' setting.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">It enables mounting other storages into the music directory.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">database {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">plugin "simple"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">path "~/.local/share/mpd/db"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">cache_directory "~/.local/share/mpd/cache"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of database config for a satellite setup</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">music_directory "nfs://fileserver.local/srv/mp3"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">database {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">plugin "proxy"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">host "other.mpd.host"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">port "6600"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Input #######################################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #228b22;">input</span> {
+        plugin <span style="color: #bc8f8f;">"curl"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">proxy "proxy.isp.com:8080"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">proxy_user "user"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">proxy_password "password"</span>
+}
+
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Audio Output ################################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">MPD supports various audio output types, as well as playing through multiple</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">audio outputs at the same time, through multiple audio_output settings</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">blocks. Setting this block is optional, though the server will only attempt</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">autodetection for one sound card.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of an ALSA output:</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "alsa"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My ALSA Device"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "hw:0,0"        # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_type      "hardware"      # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_device    "default"       # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_control   "PCM"           # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_index     "0"             # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of an OSS output:</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "oss"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My OSS Device"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "/dev/dsp"      # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_type      "hardware"      # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_device    "/dev/mixer"    # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_control   "PCM"           # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a shout output (for streaming to Icecast):</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "shout"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">encoder         "vorbis"                # optional</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My Shout Stream"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">host            "localhost"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">port            "8000"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">mount           "/mpd.ogg"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">password        "hackme"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">quality         "5.0"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">bitrate         "128"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">format          "44100:16:1"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">protocol        "icecast2"              # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">user            "source"                # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">description     "My Stream Description" # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">url             "http://example.com"    # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">genre           "jazz"                  # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">public          "no"                    # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">timeout         "2"                     # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_type      "software"              # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a recorder output:</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "recorder"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My recorder"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">encoder         "vorbis"                # optional, vorbis or lame</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">path            "/var/lib/mpd/recorder/mpd.ogg"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">quality         "5.0"                   # do not define if bitrate is defined</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">bitrate         "128"                   # do not define if quality is defined</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">format          "44100:16:1"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a httpd output (built-in HTTP streaming server):</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "httpd"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My HTTP Stream"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">encoder         "vorbis"                # optional, vorbis or lame</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">port            "8000"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">bind_to_address "0.0.0.0"               # optional, IPv4 or IPv6</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">quality         "5.0"                   # do not define if bitrate is defined</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">bitrate         "128"                   # do not define if quality is defined</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">format          "44100:16:1"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">max_clients     "0"                     # optional 0=no limit</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a pulseaudio output (streaming to a remote pulseaudio server)</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "pulse"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My Pulse Output"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">server          "remote_server"         # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">sink            "remote_server_sink"    # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">media_role      "media_role"            #optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a winmm output (Windows multimedia API).</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "winmm"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My WinMM output"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "Digital Audio (S/PDIF) (High Definition Audio Device)" # optional</span>
+<span style="color: #b22222;">#               </span><span style="color: #b22222;">or</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "0"             # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_type      "hardware"      # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of a wasapi output (Windows multimedia API).</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "wasapi"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My WASAPI output"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "Digital Audio (S/PDIF) (High Definition Audio Device)" # optional</span>
+<span style="color: #b22222;">#               </span><span style="color: #b22222;">or</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "0"             # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">mixer_type      "hardware"      # optional</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Exclusive mode blocks all other audio source, and get best audio quality without resampling.</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">exclusive       "no"            # optional</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Enumerate all devices in log.</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">enumerate       "no"            # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of an openal output.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "openal"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My OpenAL output"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "Digital Audio (S/PDIF) (High Definition Audio Device)" # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of an sndio output.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "sndio"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "sndio output"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">mixer_type      "hardware"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">An example of an OS X output:</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "osx"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My OS X Device"</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">device          "Built-in Output"       # optional</span>
+<span style="color: #b22222;">##      </span><span style="color: #b22222;">channel_map      "-1,-1,0,1"    # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Example "pipe" output:</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "pipe"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "my pipe"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">command         "aplay -f cd 2&gt;/dev/null"</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Or if you're want to use AudioCompress</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">command         "AudioCompress -m | aplay -f cd 2&gt;/dev/null"</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Or to send raw PCM stream through PCM:</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">command         "nc example.org 8765"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">format          "44100:16:2"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">An example of a null output (for no audio output):</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">type            "null"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">name            "My Null Output"</span>
+<span style="color: #b22222;">#       </span><span style="color: #b22222;">mixer_type      "none"                  # optional</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Normalization automatic volume adjustments ##################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting specifies the type of ReplayGain to use. This setting can have</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">the argument "off", "album", "track" or "auto". "auto" is a special mode that</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">chooses between "track" and "album" depending on the current state of</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">random playback. If random playback is enabled then "track" mode is used.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">See <a href="https://wiki.hydrogenaud.io/index.php?title=Replaygain">&lt;https://wiki.hydrogenaud.io/index.php?title=Replaygain&gt;</a> for</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">more details about ReplayGain.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting is off by default.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">replaygain                     "album"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the pre-amp used for files that have ReplayGain tags. By</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">default this setting is disabled.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">replaygain_preamp              "0"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting sets the pre-amp used for files that do NOT have ReplayGain tags.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">By default this setting is disabled.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">replaygain_missing_preamp      "0"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting enables or disables ReplayGain limiting.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">MPD calculates actual amplification based on the ReplayGain tags</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">and replaygain_preamp / replaygain_missing_preamp setting.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If replaygain_limit is enabled MPD will never amplify audio signal</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">above its original level. If replaygain_limit is disabled such amplification</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">might occur. By default this setting is enabled.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">replaygain_limit               "yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This setting enables on-the-fly normalization volume adjustment. This will</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">result in the volume of all playing audio to be adjusted so the output has</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">equal "loudness". This setting is disabled by default.</span>
+<span style="color: #b22222;">#</span>
+volume_normalization            <span style="color: #bc8f8f;">"yes"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Character Encoding ##########################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">If file or directory names do not display correctly for your locale then you</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">may need to modify this setting.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">filesystem_charset             "UTF-8"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">###############################################################################</span>
+
+<span style="color: #228b22;">audio_output</span> {
+        type            <span style="color: #bc8f8f;">"pipewire"</span>
+        name            <span style="color: #bc8f8f;">"PipeWire Sound Server"</span>
+}
+
+<span style="color: #228b22;">audio_output</span> {
+       type            <span style="color: #bc8f8f;">"fifo"</span>
+       name            <span style="color: #bc8f8f;">"Visualizer feed"</span>
+       path            <span style="color: #bc8f8f;">"/tmp/mpd.fifo"</span>
+       format          <span style="color: #bc8f8f;">"44100:16:2"</span>
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgede7b60" class="outline-3">
+<h3 id="orgede7b60"><span class="section-number-3">1.2</span> ncmpcpp</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org245e5c4" class="outline-4">
+<h4 id="org245e5c4"><span class="section-number-4">1.2.1</span> config</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;">##############################################################</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">This is an example configuration file. Copy it to        ##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">$XDG_CONFIG_HOME/ncmpcpp/config or $HOME/.ncmpcpp/config ##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">and set up your preferences.                             ##</span>
+<span style="color: #b22222;">##############################################################</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">directories ######</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Directory for storing ncmpcpp related files.  Changing it is useful if you</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">want to store everything somewhere else and provide command line setting for</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">alternative location to config file which defines that while launching</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">ncmpcpp.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">ncmpcpp_directory</span> = ~/.config/ncmpcpp
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">MPD clients (eg. ncmpc) also use that location.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">lyrics_directory</span> = ~/.lyrics
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">connection settings #####</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_host = localhost</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_port = 6600</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_password = ""</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_connection_timeout = 5</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Needed for tag editor and file operations to work.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">mpd_music_dir</span> = ~/Music
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_crossfade_time = 5</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Exclude pattern for random song action</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">http://www.boost.org/doc/libs/1_46_1/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">random_exclude_pattern = "^(temp|midi_songs).*"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">music visualizer #####</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">In order to make music visualizer work with MPD you need to use the fifo</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">output. Its format parameter has to be set to 44100:16:1 for mono</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualization or 44100:16:2 for stereo visualization. As an example here is</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">the relevant section for mpd.conf:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">audio_output {</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">type            "fifo"</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">name            "Visualizer feed"</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">path            "/tmp/mpd.fifo"</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">format          "44100:16:2"</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">}</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">If the visualization on occasion diverges from the audio output, please set</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">'buffer_time' parameter of your audio output in mpd.conf to '100000' (100ms)</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">or less to prevent that from happening.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: If you're using Mopidy, an address of a udpsink gstreamer's output is</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">also accepted. For example, the following section in mopidy.conf:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">[audio]</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">output = tee name=t ! queue ! autoaudiosink t.</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">! queue ! audio/x-raw,rate=44100,channels=2,format=S16LE</span>
+<span style="color: #b22222;">##        </span><span style="color: #b22222;">! udpsink host=localhost port=5555</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">will make localhost:5555 available as a source of data for the stereo</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualizer.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_data_source</span> = /tmp/mpd.fifo
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Below parameter is needed for ncmpcpp to determine which output</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">provides data for visualizer and reset it at the beginning of visualization</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">to synchronize with audio.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_output_name</span> = Visualizer feed
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">If you set format to 44100:16:2, make it 'yes'.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">visualizer_in_stereo</span> = no
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: set below to &gt;=10 only if you have synchronization issues with</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualization and audio.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_sync_interval = 0</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: To enable spectrum frequency visualization you need to compile ncmpcpp</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">with fftw3 support.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: spectrum, wave, wave_filled, ellipse.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">visualizer_type</span> = spectrum
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_fps</span> = 60
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_autoscale</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_look</span> = &#9679;&#9646;
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_color = blue, cyan, green, yellow, magenta, red</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Alternative subset of 256 colors for terminals that support it.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_color = 47, 83, 119, 155, 191, 227, 221, 215, 209, 203, 197, 161</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: The next few visualization options apply to the spectrum visualizer.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Use unicode block characters for a smoother, more continuous look.</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">This will override the visualizer_look option. With transparent terminals</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">and visualizer_in_stereo set, artifacts may be visible on the bottom half of</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">the visualization.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">visualizer_spectrum_smooth_look</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Use unicode block characters from "symbols for legacy computing". This</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">improves the smooth look on transparent terminals by using special unicode</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">chars instead of reversing the background and foreground color on the bottom</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">edge of the spectrum. If it leads to a garbled output on the bottom edge of</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">the spectrum, you can either change the font or disable this option.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_smooth_look_legacy_chars = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">A value between 1 and 5 inclusive. Specifying a larger value makes the</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualizer look at a larger slice of time, which results in less jumpy</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualizer output.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_dft_size = 2</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_gain = 10</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Left-most frequency of visualizer in Hz, must be less than HZ MAX</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_hz_min = 20</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Right-most frequency of visualizer in Hz, must be greater than HZ MIN</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_hz_max = 20000</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Use log scaling for the frequency spectrum axes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_log_scale_x = yes</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">visualizer_spectrum_log_scale_y = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">system encoding #####</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">ncmpcpp should detect your charset encoding but if it failed to do so, you</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">can specify charset encoding you are using here.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can see whether your ncmpcpp build supports charset detection by</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">checking output of `ncmpcpp --version`.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Since MPD uses UTF-8 by default, setting this option makes sense only</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">if your encoding is different.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">system_encoding = ""</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">delays #####</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Time of inactivity (in seconds) after playlist highlighting will be disabled</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">(0 = always on).</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_disable_highlight_delay = 5</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Defines how long messages are supposed to be visible.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">message_delay_time</span> = 3
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">song format #####</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">For a song format you can use:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%l - length</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%f - filename</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%F - full filepath</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%D - directory</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%a - artist</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%A - album artist</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%t - title</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%b - album</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%y - date</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%n - track number (01/12 -&gt; 01)</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%N - full track info (01/12 -&gt; 01/12)</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%g - genre</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%c - composer</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%p - performer</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%d - disc</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%C - comment</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">%P - priority</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">$R - begin right alignment</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">If you want to make sure that a part of the format is displayed only when</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">certain tags are present, you can archieve it by grouping them with brackets,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">e.g. '{%a - %t}' will be evaluated to 'ARTIST - TITLE' if both tags are</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">present or '' otherwise.  It is also possible to define a list of</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">alternatives by providing several groups and separating them with '|',</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">e.g. '{%t}|{%f}' will be evaluated to 'TITLE' or 'FILENAME' if the former is</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">not present.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: If you want to set limit on maximal length of a tag, just put the</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">appropriate number between % and character that defines tag type, e.g. to</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">make album take max. 20 terminal cells, use '%20b'.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">In addition, formats support markers used for text attributes.  They are</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">followed by character '$'. After that you can put:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 0 - default window color (discards all other colors)</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 1 - black</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 2 - red</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 3 - green</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 4 - yellow</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 5 - blue</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 6 - magenta</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 7 - cyan</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 8 - white</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 9 - end of current color</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- b - bold text</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- u - underline text</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- i - italic text</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- r - reverse colors</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- a - use alternative character set</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">If you don't want to use a non-color attribute anymore, just put it again,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">but this time insert character '/' between '$' and attribute character,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">e.g. {$b%t$/b}|{$r%f$/r} will display bolded title tag or filename with</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">reversed colors.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">If you want to use 256 colors and/or background colors in formats (the naming</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">scheme is described below in section about color definitions), it can be done</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">with the syntax $(COLOR), e.g. to set the artist tag to one of the</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">non-standard colors and make it have yellow background, you need to write</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">$(197_yellow)%a$(end). Note that for standard colors this is interchangable</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">with attributes listed above.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: colors can be nested.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">song_list_format = {%a - }{%t}|{$8%f$9}$R{$3%l$9}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">song_library_format = {%n - }{%t}|{%f}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">current_item_prefix = $(yellow)$r</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">current_item_suffix = $/r$(end)</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">current_item_inactive_column_prefix = $(white)$r</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">current_item_inactive_column_suffix = $/r$(end)</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">now_playing_prefix = $b</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">now_playing_suffix = $/b</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">browser_playlist_prefix = "$2playlist$9 "</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">selected_item_prefix = $6</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">selected_item_suffix = $9</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">modified_item_prefix = $3&gt; $9</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: attributes are not supported for the following variables.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">song_window_title_format = {%a - }{%t}|{%f}</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Below variables are used for sorting songs in browser.  The sort mode</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">determines how songs are sorted, and can be used in combination with a sort</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">format to specify a custom sorting format.  Available values for</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">browser_sort_mode are "type", "name", "mtime", "format" and "none".</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">browser_sort_mode = type</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">browser_sort_format = {%a - }{%t}|{%f} {%l}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">columns settings #####</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">syntax of song columns list format is "column column etc."</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- syntax for each column is:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">(width of the column)[color of the column]{displayed tag}</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Width is by default in %, if you want a column to have fixed size, add</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">'f' after the value, e.g. (10)[white]{a} will be the column that take 10% of</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">screen (so the real width will depend on actual screen size), whereas</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">(10f)[white]{a} will take 10 terminal cells, no matter how wide the screen</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">is.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- color is optional (if you want the default one, leave the field empty).</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can give a column additional attributes by putting appropriate</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">character after displayed tag character. Available attributes are:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- r - column will be right aligned</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- E - if tag is empty, empty tag marker won't be displayed</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">You can also:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- give a column custom name by putting it after attributes, separated with</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">character ':', e.g. {lr:Length} gives you right aligned column of lengths</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">named "Length".</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- define sequence of tags, that have to be displayed in case predecessor is</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">empty in a way similar to the one in classic song format, i.e. using '|'</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">character, e.g. {a|c|p:Owner} creates column named "Owner" that tries to</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">display artist tag and then composer and performer if previous ones are not</span>
+<span style="color: #b22222;">##   </span><span style="color: #b22222;">available.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">various settings #####</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Custom command that will be executed each time song changes. Useful for</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">notifications etc.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">execute_on_song_change = ""</span>
+<span style="color: #b8860b;">execute_on_song_change</span> = ~/.local/bin/mpd-coverart
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Custom command that will be executed each time player state</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">changes. The environment variable MPD_PLAYER_STATE is set to the current</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">state (either unknown, play, pause, or stop) for its duration.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">execute_on_player_state_change = ""</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_show_mpd_host = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_show_remaining_time = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_shorten_total_times = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_separate_albums = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Possible display modes: classic, columns.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_display_mode = columns</span>
+<span style="color: #b8860b;">playlist_display_mode</span> = classic
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">browser_display_mode = classic</span>
+<span style="color: #b8860b;">browser_display_mode</span> = columns
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">search_engine_display_mode = classic</span>
+<span style="color: #b8860b;">search_engine_display_mode</span> = columns
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_editor_display_mode = classic</span>
+<span style="color: #b8860b;">playlist_editor_display_mode</span> = columns
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">discard_colors_if_item_is_selected = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">show_duplicate_tags = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">incremental_seeking = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">seek_time = 1</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">volume_change_step = 2</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">autocenter_mode = no</span>
+<span style="color: #b8860b;">autocenter_mode</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">centered_cursor = no</span>
+<span style="color: #b8860b;">centered_cursor</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can specify third character which will be used to build 'empty'</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">part of progressbar.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">progressbar_look = =&gt;</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: database, playlist.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">default_place_to_search_in = database</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: classic, alternative.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">user_interface = classic</span>
+<span style="color: #b8860b;">user_interface</span> = alternative
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">data_fetching_delay = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: artist, album_artist, date, genre, composer, performer.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_primary_tag = artist</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_albums_split_by_date = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_hide_album_dates = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: wrapped, normal.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">default_find_mode = wrapped</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">default_tag_editor_pattern = %n - %t</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">header_visibility = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">statusbar_visibility = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Show the "Connected to ..." message on startup</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">connected_message_on_startup = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">titles_visibility = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">header_text_scrolling = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">cyclic_scrolling = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">lyrics_fetchers = tags, genius, tekstowo, plyrics, justsomelyrics, jahlyrics, zeneszoveg, internet</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">follow_now_playing_lyrics = no</span>
+<span style="color: #b8860b;">follow_now_playing_lyrics</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">fetch_lyrics_for_current_song_in_background = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">store_lyrics_in_song_dir = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">generate_win32_compatible_filenames = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">allow_for_physical_item_deletion</span> = no
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: If you set this variable, ncmpcpp will try to get info from last.fm in</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">language you set and if it fails, it will fall back to english. Otherwise it</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">will use english the first time.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: Language has to be expressed as an ISO 639 alpha-2 code.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">lastfm_preferred_language</span> = en
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">space_add_mode = add_remove</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">show_hidden_files_in_local_browser = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">How shall screen switcher work?</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- "previous" - switch between the current and previous screen.</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- "screen1,...,screenN" - switch between given sequence of screens.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Screens available for use: help, playlist, browser, search_engine,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">media_library, playlist_editor, tag_editor, outputs, visualizer, clock,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">lyrics, last_fm.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">screen_switcher_mode = playlist, browser</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can define startup screen by choosing screen from the list above.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">startup_screen = playlist</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can define startup slave screen by choosing screen from the list</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">above or an empty value for no slave screen.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">startup_slave_screen = ""</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">startup_slave_screen_focus = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Default width of locked screen (in %).  Acceptable values are from 20 to 80.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">locked_screen_width_part = 50</span>
+<span style="color: #b8860b;">locked_screen_width_part</span> = 60
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">ask_for_locked_screen_width_part = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Width of media_library screen columns</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_column_width_ratio_two = 1:1</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_column_width_ratio_three = 1:1:1</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Width of playlist_editor screen columns</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">playlist_editor_column_width_ratio = 1:2</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">jump_to_now_playing_song_at_start = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">ask_before_clearing_playlists = yes</span>
+<span style="color: #b8860b;">ask_before_clearing_playlists</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">clock_display_seconds = no</span>
+<span style="color: #b8860b;">clock_display_seconds</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">display_volume_level = yes</span>
+<span style="color: #b8860b;">display_volume_level</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">display_bitrate = no</span>
+<span style="color: #b8860b;">display_bitrate</span> = no
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">display_remaining_time = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Available values: none, basic, extended, perl.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">regular_expressions = perl</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: if below is enabled, ncmpcpp will ignore leading "The" word while</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">sorting items in browser, tags in media library, etc.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">ignore_leading_the = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: if below is enabled, ncmpcpp will ignore diacritics while searching and</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">filtering lists. This takes an effect only if boost was compiled with ICU</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">support.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">ignore_diacritics = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">block_search_constraints_change_if_items_found = yes</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mouse_support = yes</span>
+<span style="color: #b8860b;">mouse_support</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mouse_list_scroll_whole_page = no</span>
+<span style="color: #b8860b;">mouse_list_scroll_whole_page</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">lines_scrolled</span> = 1
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">empty_tag_marker</span> = &lt;empty&gt;
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">tags_separator</span> = <span style="color: #bc8f8f;">" | "</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">tag_editor_extended_numeration = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">media_library_sort_by_mtime = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b8860b;">enable_window_title</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: You can choose default search mode for search engine. Available modes</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">are:</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 1 - use mpd built-in searching (no regexes, pattern matching)</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 2 - use ncmpcpp searching (pattern matching with support for regexes, but</span>
+<span style="color: #b22222;">##       </span><span style="color: #b22222;">if your mpd is on a remote machine, downloading big database to process</span>
+<span style="color: #b22222;">##       </span><span style="color: #b22222;">it can take a while</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">- 3 - match only exact values (this mode uses mpd function for searching in</span>
+<span style="color: #b22222;">##       </span><span style="color: #b22222;">database and local one for searching in current playlist)</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">search_engine_default_search_mode = 1</span>
+<span style="color: #b8860b;">search_engine_default_search_mode</span> = 2
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">external_editor = nano</span>
+<span style="color: #b8860b;">external_editor</span> = emacsclient -t -a <span style="color: #bc8f8f;">''</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: set to yes if external editor is a console application.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b8860b;">use_console_editor</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">##### </span><span style="color: #b22222;">colors definitions #####</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">It is possible to set a background color by setting a color value</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">"&lt;foreground&gt;_&lt;background&gt;", e.g. red_black will set foregound color to red</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">and background color to black.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">In addition, for terminals that support 256 colors it is possible to set one</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">of them by using a number in range [1, 256] instead of color name,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">e.g. numerical value corresponding to red_black is 2_1. To find out if the</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">terminal supports 256 colors, run ncmpcpp and check out the bottom of the</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">help screen for list of available colors and their numerical values.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">What is more, there are two special values for the background color:</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">"transparent" and "current". The first one explicitly sets the background to</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">be transparent, while the second one allows you to preserve current</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">background color and change only the foreground one. It's used implicitly</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">when background color is not specified.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Moreover, it is possible to attach format information to selected color</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">variables by appending to their end a colon followed by one or more format</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">flags, e.g. black:b or red:ur. The following variables support this syntax:</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">visualizer_color, color1, color2, empty_tag_color, volume_color,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">state_line_color, state_flags_color, progressbar_color,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">progressbar_elapsed_color, player_state_color, statusbar_time_color,</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">alternative_ui_separator_color.</span>
+<span style="color: #b22222;">##</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">Note: due to technical limitations of older ncurses version, if 256 colors</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">are used there is a possibility that you'll be able to use only colors with</span>
+<span style="color: #b22222;">## </span><span style="color: #b22222;">transparent background.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">colors_enabled = yes</span>
+<span style="color: #b8860b;">colors_enabled</span> = yes
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">empty_tag_color = cyan</span>
+<span style="color: #b8860b;">empty_tag_color</span> = cyan
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">header_window_color = default</span>
+<span style="color: #b8860b;">header_window_color</span> = 142
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">volume_color = default</span>
+<span style="color: #b8860b;">volume_color</span> = 107
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">state_line_color = default</span>
+<span style="color: #b8860b;">state_line_color</span> = 183
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">state_flags_color = default:b</span>
+<span style="color: #b8860b;">state_flags_color</span> = 183:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">main_window_color = yellow</span>
+<span style="color: #b8860b;">main_window_color</span> = 16
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">color1 = white</span>
+<span style="color: #b8860b;">color1</span> = 60
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">color2 = green</span>
+<span style="color: #b8860b;">color2</span> = 22
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">progressbar_color = black:b</span>
+<span style="color: #b8860b;">progressbar_color</span> = 206:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">progressbar_elapsed_color = green:b</span>
+<span style="color: #b8860b;">progressbar_elapsed_color</span> = 142:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">statusbar_color = default</span>
+<span style="color: #b8860b;">statusbar_color</span> = 142
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">statusbar_time_color = default:b</span>
+<span style="color: #b8860b;">statusbar_time_color</span> = default:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">player_state_color = default:b</span>
+<span style="color: #b8860b;">player_state_color</span> = 206:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">alternative_ui_separator_color = black:b</span>
+<span style="color: #b8860b;">alternative_ui_separator_color</span> = black:b
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">window_border_color = green</span>
+<span style="color: #b8860b;">window_border_color</span> = green
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">active_window_border = red</span>
+<span style="color: #b8860b;">active_window_border</span> = red
+<span style="color: #b22222;">#</span>
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb7de6c" class="outline-4">
+<h4 id="orgcb7de6c"><span class="section-number-4">1.2.2</span> bindings</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- conf -*-</span>
+def_key <span style="color: #bc8f8f;">"mouse"</span>
+  mouse_event
+
+def_key <span style="color: #bc8f8f;">"up"</span>
+ scroll_up
+
+def_key <span style="color: #bc8f8f;">"k"</span>
+ scroll_up
+
+def_key <span style="color: #bc8f8f;">"shift-up"</span>
+ select_item
+ scroll_up
+
+def_key <span style="color: #bc8f8f;">"shift-k"</span>
+ select_item
+ scroll_up
+
+def_key <span style="color: #bc8f8f;">"down"</span>
+ scroll_down
+
+def_key <span style="color: #bc8f8f;">"j"</span>
+ scroll_down
+
+def_key <span style="color: #bc8f8f;">"shift-down"</span>
+ select_item
+ scroll_down
+
+def_key <span style="color: #bc8f8f;">"shift-j"</span>
+ select_item
+ scroll_down
+
+def_key <span style="color: #bc8f8f;">"["</span>
+ scroll_up_album
+
+def_key <span style="color: #bc8f8f;">"]"</span>
+ scroll_down_album
+
+<span style="color: #228b22;">def_key </span><span style="color: #228b22;">"</span><span style="color: #bc8f8f;">{"</span>
+ scroll_up_artist
+
+def_key <span style="color: #bc8f8f;">"}"</span>
+ scroll_down_artist
+
+def_key <span style="color: #bc8f8f;">"page_up"</span>
+ page_up
+
+def_key <span style="color: #bc8f8f;">"page_down"</span>
+ page_down
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "home"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">move_home</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "end"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">move_end</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "insert"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">select_item</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "enter"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">enter_directory</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "enter"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">toggle_output</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "enter"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">run_action</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "enter"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">play_item</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "space"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">add_item_to_playlist</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "space"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">toggle_lyrics_update_on_song_change</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "space"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">toggle_visualization_type</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "delete"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">delete_playlist_items</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "delete"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">delete_browser_items</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">def_key "delete"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">delete_stored_playlist</span>
+<span style="color: #b22222;">#</span>
+def_key <span style="color: #bc8f8f;">"right"</span>
+ next_column
+
+def_key <span style="color: #bc8f8f;">"l"</span>
+ next_column
+
+def_key <span style="color: #bc8f8f;">"right"</span>
+ slave_screen
+
+def_key <span style="color: #bc8f8f;">"l"</span>
+ slave_screen
+
+def_key <span style="color: #bc8f8f;">"l"</span>
+ volume_up
+
+def_key <span style="color: #bc8f8f;">"+"</span>
+ volume_up
+
+def_key <span style="color: #bc8f8f;">"left"</span>
+ previous_column
+
+def_key <span style="color: #bc8f8f;">"h"</span>
+ previous_column
+
+def_key <span style="color: #bc8f8f;">"left"</span>
+ master_screen
+
+def_key <span style="color: #bc8f8f;">"h"</span>
+ master_screen
+
+def_key <span style="color: #bc8f8f;">"left"</span>
+ volume_down
+
+def_key <span style="color: #bc8f8f;">"h"</span>
+ volume_down
+
+def_key <span style="color: #bc8f8f;">"-"</span>
+ volume_down
+
+def_key <span style="color: #bc8f8f;">":"</span>
+ execute_command
+
+def_key <span style="color: #bc8f8f;">"tab"</span>
+ next_screen
+
+def_key <span style="color: #bc8f8f;">"shift-tab"</span>
+ previous_screen
+
+def_key <span style="color: #bc8f8f;">"f1"</span>
+ show_help
+
+def_key <span style="color: #bc8f8f;">"1"</span>
+ show_playlist
+
+def_key <span style="color: #bc8f8f;">"2"</span>
+ show_browser
+
+def_key <span style="color: #bc8f8f;">"2"</span>
+ change_browse_mode
+
+def_key <span style="color: #bc8f8f;">"3"</span>
+ show_search_engine
+
+def_key <span style="color: #bc8f8f;">"3"</span>
+ reset_search_engine
+
+def_key <span style="color: #bc8f8f;">"4"</span>
+ show_media_library
+
+def_key <span style="color: #bc8f8f;">"4"</span>
+ toggle_media_library_columns_mode
+
+def_key <span style="color: #bc8f8f;">"5"</span>
+ show_playlist_editor
+
+def_key <span style="color: #bc8f8f;">"6"</span>
+ show_tag_editor
+
+def_key <span style="color: #bc8f8f;">"7"</span>
+ show_outputs
+
+def_key <span style="color: #bc8f8f;">"8"</span>
+ show_visualizer
+
+def_key <span style="color: #bc8f8f;">"="</span>
+ show_clock
+
+def_key <span style="color: #bc8f8f;">"@"</span>
+ show_server_info
+
+def_key <span style="color: #bc8f8f;">"s"</span>
+ stop
+
+def_key <span style="color: #bc8f8f;">"p"</span>
+ pause
+
+def_key <span style="color: #bc8f8f;">"&gt;"</span>
+ next
+
+def_key <span style="color: #bc8f8f;">"&lt;"</span>
+ previous
+
+def_key <span style="color: #bc8f8f;">"ctrl-h"</span>
+ jump_to_parent_directory
+
+def_key <span style="color: #bc8f8f;">"ctrl-h"</span>
+ replay_song
+
+def_key <span style="color: #bc8f8f;">"backspace"</span>
+ jump_to_parent_directory
+
+def_key <span style="color: #bc8f8f;">"backspace"</span>
+ replay_song
+
+def_key <span style="color: #bc8f8f;">"backspace"</span>
+ play
+
+def_key <span style="color: #bc8f8f;">"f"</span>
+ seek_forward
+
+def_key <span style="color: #bc8f8f;">"b"</span>
+ seek_backward
+
+def_key <span style="color: #bc8f8f;">"r"</span>
+ toggle_repeat
+
+def_key <span style="color: #bc8f8f;">"z"</span>
+ toggle_random
+
+def_key <span style="color: #bc8f8f;">"y"</span>
+ save_tag_changes
+
+def_key <span style="color: #bc8f8f;">"y"</span>
+ start_searching
+
+def_key <span style="color: #bc8f8f;">"y"</span>
+ toggle_single
+
+def_key <span style="color: #bc8f8f;">"R"</span>
+ toggle_consume
+
+def_key <span style="color: #bc8f8f;">"Y"</span>
+ toggle_replay_gain_mode
+
+def_key <span style="color: #bc8f8f;">"T"</span>
+ toggle_add_mode
+
+def_key <span style="color: #bc8f8f;">"|"</span>
+ toggle_mouse
+
+def_key <span style="color: #bc8f8f;">"#"</span>
+ toggle_bitrate_visibility
+
+def_key <span style="color: #bc8f8f;">"Z"</span>
+ shuffle
+
+def_key <span style="color: #bc8f8f;">"x"</span>
+ toggle_crossfade
+
+def_key <span style="color: #bc8f8f;">"X"</span>
+ set_crossfade
+
+def_key <span style="color: #bc8f8f;">"u"</span>
+ update_database
+
+def_key <span style="color: #bc8f8f;">"ctrl-s"</span>
+ sort_playlist
+
+def_key <span style="color: #bc8f8f;">"ctrl-s"</span>
+ toggle_browser_sort_mode
+
+def_key <span style="color: #bc8f8f;">"ctrl-s"</span>
+ toggle_media_library_sort_mode
+
+def_key <span style="color: #bc8f8f;">"ctrl-r"</span>
+ reverse_playlist
+
+def_key <span style="color: #bc8f8f;">"ctrl-f"</span>
+ apply_filter
+
+def_key <span style="color: #bc8f8f;">"ctrl-_"</span>
+ select_found_items
+
+def_key <span style="color: #bc8f8f;">"/"</span>
+ find
+
+def_key <span style="color: #bc8f8f;">"/"</span>
+ find_item_forward
+
+def_key <span style="color: #bc8f8f;">"?"</span>
+ find
+
+def_key <span style="color: #bc8f8f;">"?"</span>
+ find_item_backward
+
+def_key <span style="color: #bc8f8f;">"."</span>
+ next_found_item
+
+def_key <span style="color: #bc8f8f;">","</span>
+ previous_found_item
+
+def_key <span style="color: #bc8f8f;">"w"</span>
+ toggle_find_mode
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_song
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_library_tag
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_library_album
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_directory_name
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_playlist_name
+
+def_key <span style="color: #bc8f8f;">"e"</span>
+ edit_lyrics
+
+def_key <span style="color: #bc8f8f;">"i"</span>
+ show_song_info
+
+def_key <span style="color: #bc8f8f;">"I"</span>
+ show_artist_info
+
+def_key <span style="color: #bc8f8f;">"g"</span>
+ jump_to_position_in_song
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">def_key "l"</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">show_lyrics</span>
+
+def_key <span style="color: #bc8f8f;">";"</span>
+ show_lyrics
+
+def_key <span style="color: #bc8f8f;">"ctrl-v"</span>
+ select_range
+
+def_key <span style="color: #bc8f8f;">"v"</span>
+ reverse_selection
+
+def_key <span style="color: #bc8f8f;">"V"</span>
+ remove_selection
+
+def_key <span style="color: #bc8f8f;">"B"</span>
+ select_album
+
+def_key <span style="color: #bc8f8f;">"a"</span>
+ add_selected_items
+
+def_key <span style="color: #bc8f8f;">"c"</span>
+ clear_playlist
+
+def_key <span style="color: #bc8f8f;">"c"</span>
+ clear_main_playlist
+
+def_key <span style="color: #bc8f8f;">"C"</span>
+ crop_playlist
+
+def_key <span style="color: #bc8f8f;">"C"</span>
+ crop_main_playlist
+
+def_key <span style="color: #bc8f8f;">"m"</span>
+ move_sort_order_up
+
+def_key <span style="color: #bc8f8f;">"m"</span>
+ move_selected_items_up
+
+def_key <span style="color: #bc8f8f;">"n"</span>
+ move_sort_order_down
+
+def_key <span style="color: #bc8f8f;">"n"</span>
+ move_selected_items_down
+
+def_key <span style="color: #bc8f8f;">"M"</span>
+ move_selected_items_to
+
+def_key <span style="color: #bc8f8f;">"A"</span>
+ add
+
+def_key <span style="color: #bc8f8f;">"S"</span>
+ save_playlist
+
+def_key <span style="color: #bc8f8f;">"o"</span>
+ jump_to_playing_song
+
+def_key <span style="color: #bc8f8f;">"G"</span>
+ jump_to_browser
+
+def_key <span style="color: #bc8f8f;">"G"</span>
+ jump_to_playlist_editor
+
+def_key <span style="color: #bc8f8f;">"~"</span>
+ jump_to_media_library
+
+def_key <span style="color: #bc8f8f;">"E"</span>
+ jump_to_tag_editor
+
+def_key <span style="color: #bc8f8f;">"U"</span>
+ toggle_playing_song_centering
+
+def_key <span style="color: #bc8f8f;">"P"</span>
+ toggle_display_mode
+
+def_key <span style="color: #bc8f8f;">"\\"</span>
+ toggle_interface
+
+def_key <span style="color: #bc8f8f;">"!"</span>
+ toggle_separators_between_albums
+
+def_key <span style="color: #bc8f8f;">"L"</span>
+ toggle_lyrics_fetcher
+
+def_key <span style="color: #bc8f8f;">"F"</span>
+ fetch_lyrics_in_background
+
+def_key <span style="color: #bc8f8f;">"alt-l"</span>
+ toggle_fetching_lyrics_in_background
+
+def_key <span style="color: #bc8f8f;">"ctrl-l"</span>
+ toggle_screen_lock
+
+def_key <span style="color: #bc8f8f;">"`"</span>
+ toggle_library_tag_type
+
+def_key <span style="color: #bc8f8f;">"`"</span>
+ refetch_lyrics
+
+def_key <span style="color: #bc8f8f;">"`"</span>
+ add_random_items
+
+def_key <span style="color: #bc8f8f;">"ctrl-p"</span>
+ set_selected_items_priority
+
+def_key <span style="color: #bc8f8f;">"q"</span>
+ quit
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-11-06 Wed 00:00</p>
+<p class="author">Author: Kristian Alexander P</p>
+<p class="date">Created: 2024-11-06 Wed 16:24</p>
+</div>
+</body>
+</html>
