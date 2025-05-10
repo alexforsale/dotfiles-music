@@ -1526,7 +1526,9 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
 :PROPERTIES:
 :header-args: :tangle .local/bin/mpd-coverart :mkdirp t
 :END:
-#+begin_src shell
+
+This version uses the =mpc= commands from the /mpd/ package.
+#+begin_src shell :tangle no
   #!/bin/sh
 
   music_dir="$HOME/Music"
@@ -1536,4 +1538,15 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
   covers="$(find "${album_dir}/" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\($album\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
 
   notify-send -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -i "$covers"
+#+end_src
+
+This version uses /playerctl/, for /mpd/ it also needed /mpd-mpris/ started.
+#+begin_src shell
+  #!/bin/sh
+
+  artist="$(playerctl metadata xesam:artist)"
+  album="$(playerctl metadata xesam:album)"
+  cover="$(playerctl metadata mpris:artUrl)"
+
+  notify-send -r 27072 "$(playerctl metadata --all-players --format '{{title}}')" "$(playerctl metadata --all-players --format '{{artist}} - {{title}}')\nfrom the album: $(playerctl metadata --all-players --format '{{album}}')" -i "${cover}"
 #+end_src
