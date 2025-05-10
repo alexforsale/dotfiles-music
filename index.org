@@ -1528,9 +1528,7 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
 :END:
 
 This version uses the =mpc= commands from the /mpd/ package.
-#+begin_src shell :tangle no
-  #!/bin/sh
-
+#+begin_src shell :shebang #!/bin/sh :tangle no
   music_dir="$HOME/Music"
   artist="$(mpc --format %artist% current)"
   album="$(mpc --format %album% current)"
@@ -1541,9 +1539,7 @@ This version uses the =mpc= commands from the /mpd/ package.
 #+end_src
 
 This version uses /playerctl/, for /mpd/ it also needed /mpd-mpris/ started.
-#+begin_src shell
-  #!/bin/sh
-
+#+begin_src shell :shebang #!/bin/sh
   artist="$(playerctl metadata xesam:artist)"
   album="$(playerctl metadata xesam:album)"
   cover="$(playerctl metadata mpris:artUrl)"
