@@ -1,0 +1,9 @@
+#!/bin/sh
+
+music_dir="$HOME/Music"
+artist="$(mpc --format %artist% current)"
+album="$(mpc --format %album% current)"
+album_dir="${music_dir}/${artist}/${album/\//-}"
+covers="$(find "${album_dir}/" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\($album\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
+
+notify-send -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -i "$covers"

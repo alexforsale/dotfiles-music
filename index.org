@@ -1521,3 +1521,19 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
 
 
 #+end_src
+** Scripts
+*** mpd-coverart
+:PROPERTIES:
+:header-args: :tangle .local/bin/mpd-coverart :mkdirp t
+:END:
+#+begin_src shell
+  #!/bin/sh
+
+  music_dir="$HOME/Music"
+  artist="$(mpc --format %artist% current)"
+  album="$(mpc --format %album% current)"
+  album_dir="${music_dir}/${artist}/${album/\//-}"
+  covers="$(find "${album_dir}/" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\($album\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
+
+  notify-send -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -i "$covers"
+#+end_src
