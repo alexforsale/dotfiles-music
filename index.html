@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-10 Sat 16:01 -->
+<!-- 2025-05-10 Sat 16:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Various Music player configurations</title>
@@ -28,24 +28,24 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgad3781a">Applications</a>
+<li><a href="#org4e98f28">Applications</a>
 <ul>
-<li><a href="#org6efe663">MPD</a>
+<li><a href="#orgaa2b4a1">MPD</a>
 <ul>
-<li><a href="#orgbdd8680">Files And Directories</a></li>
-<li><a href="#org9201c2a">General Settings</a></li>
+<li><a href="#orgb3f6314">Files And Directories</a></li>
+<li><a href="#orgdd7d580">General Settings</a></li>
 </ul>
 </li>
-<li><a href="#org894ec61">ncmpcpp</a>
+<li><a href="#orge0fd34d">ncmpcpp</a>
 <ul>
-<li><a href="#org6a479a8">Directories</a></li>
-<li><a href="#org789bc12">Connections</a></li>
-<li><a href="#org0cc8aa4">bindings</a></li>
+<li><a href="#org0a32c29">Directories</a></li>
+<li><a href="#orgf600e56">Connections</a></li>
+<li><a href="#org72248c6">bindings</a></li>
 </ul>
 </li>
-<li><a href="#orgcd2865c">Scripts</a>
+<li><a href="#org42e77bf">Scripts</a>
 <ul>
-<li><a href="#orga23c43d">mpd-coverart</a></li>
+<li><a href="#orgcc6e077">mpd-coverart</a></li>
 </ul>
 </li>
 </ul>
@@ -54,21 +54,21 @@
 </div>
 </div>
 
-<div id="outline-container-orgad3781a" class="outline-2">
-<h2 id="orgad3781a">Applications</h2>
-<div class="outline-text-2" id="text-orgad3781a">
+<div id="outline-container-org4e98f28" class="outline-2">
+<h2 id="org4e98f28">Applications</h2>
+<div class="outline-text-2" id="text-org4e98f28">
 </div>
-<div id="outline-container-org6efe663" class="outline-3">
-<h3 id="org6efe663">MPD</h3>
-<div class="outline-text-3" id="text-org6efe663">
+<div id="outline-container-orgaa2b4a1" class="outline-3">
+<h3 id="orgaa2b4a1">MPD</h3>
+<div class="outline-text-3" id="text-orgaa2b4a1">
 </div>
-<div id="outline-container-orgbdd8680" class="outline-4">
-<h4 id="orgbdd8680">Files And Directories</h4>
-<div class="outline-text-4" id="text-orgbdd8680">
+<div id="outline-container-orgb3f6314" class="outline-4">
+<h4 id="orgb3f6314">Files And Directories</h4>
+<div class="outline-text-4" id="text-orgb3f6314">
 </div>
 <ul class="org-ul">
-<li><a id="orge0494bd"></a>Music Directory<br />
-<div class="outline-text-5" id="text-orge0494bd">
+<li><a id="orgd221ce2"></a>Music Directory<br />
+<div class="outline-text-5" id="text-orgd221ce2">
 <p>
 This setting controls the top directory which MPD will search to discover the available audio files and add them to the daemon's online database. This setting defaults to the XDG directory, otherwise the music directory will be be disabled and audio files will only be accepted over ipc socket (using <code>file://</code> protocol) or streaming files over an accepted protocol.
 </p>
@@ -78,8 +78,8 @@ This setting controls the top directory which MPD will search to discover the av
 </div>
 </div>
 </li>
-<li><a id="org4ee555c"></a>Playlist Directory<br />
-<div class="outline-text-5" id="text-org4ee555c">
+<li><a id="org439c285"></a>Playlist Directory<br />
+<div class="outline-text-5" id="text-org439c285">
 <p>
 This setting sets the MPD internal playlist directory. The purpose of this directory is storage for playlists created by MPD. The server will use playlist files not created by the server but only if they are in the MPD format. This setting defaults to playlist saving being disabled.
 </p>
@@ -89,8 +89,8 @@ This setting sets the MPD internal playlist directory. The purpose of this direc
 </div>
 </div>
 </li>
-<li><a id="org940c133"></a>DB File<br />
-<div class="outline-text-5" id="text-org940c133">
+<li><a id="org4aca46c"></a>DB File<br />
+<div class="outline-text-5" id="text-org4aca46c">
 <p>
 This setting sets the location of the MPD database. This file is used to  load the database at server start up and store the database while the  server is not up. This setting defaults to disabled which will allow  MPD to accept files over ipc socket (using <code>file://</code> protocol) or streaming  files over an accepted protocol.
 </p>
@@ -100,8 +100,8 @@ This setting sets the location of the MPD database. This file is used to  load t
 </div>
 </div>
 </li>
-<li><a id="orgcbf132e"></a>Log File<br />
-<div class="outline-text-5" id="text-orgcbf132e">
+<li><a id="org5415ba5"></a>Log File<br />
+<div class="outline-text-5" id="text-org5415ba5">
 <p>
 These settings are the locations for the daemon log files for the daemon.
 The special value "syslog" makes MPD use the local syslog daemon. This setting defaults to logging to syslog.
@@ -113,8 +113,8 @@ If you use systemd, do not configure a log_file.  With systemd, MPD defaults to 
 </div>
 </div>
 </li>
-<li><a id="org96fefc7"></a>PID File<br />
-<div class="outline-text-5" id="text-org96fefc7">
+<li><a id="orgb6e89c4"></a>PID File<br />
+<div class="outline-text-5" id="text-orgb6e89c4">
 <p>
 This setting sets the location of the file which stores the process ID for use of mpd &#x2013;kill and some init scripts. This setting is disabled by default and the pid file will not be stored. If you use systemd, do not configure a pid_file.
 </p>
@@ -124,8 +124,8 @@ This setting sets the location of the file which stores the process ID for use o
 </div>
 </div>
 </li>
-<li><a id="org2153a62"></a>State File<br />
-<div class="outline-text-5" id="text-org2153a62">
+<li><a id="org340cdec"></a>State File<br />
+<div class="outline-text-5" id="text-org340cdec">
 <p>
 This setting sets the location of the file which contains information about
 most variables to get MPD back into the same general shape it was in before
@@ -138,8 +138,8 @@ state will be reset on server start up.
 </div>
 </div>
 </li>
-<li><a id="orge5b3b6a"></a>Sticker File<br />
-<div class="outline-text-5" id="text-orge5b3b6a">
+<li><a id="org49a1ab4"></a>Sticker File<br />
+<div class="outline-text-5" id="text-org49a1ab4">
 <p>
 The location of the sticker database.  This is a database which manages dynamic information attached to songs.
 </p>
@@ -151,13 +151,13 @@ The location of the sticker database.  This is a database which manages dynamic 
 </li>
 </ul>
 </div>
-<div id="outline-container-org9201c2a" class="outline-4">
-<h4 id="org9201c2a">General Settings</h4>
-<div class="outline-text-4" id="text-org9201c2a">
+<div id="outline-container-orgdd7d580" class="outline-4">
+<h4 id="orgdd7d580">General Settings</h4>
+<div class="outline-text-4" id="text-orgdd7d580">
 </div>
 <ul class="org-ul">
-<li><a id="org585d44f"></a>User and Group<br />
-<div class="outline-text-5" id="text-org585d44f">
+<li><a id="org7d24c64"></a>User and Group<br />
+<div class="outline-text-5" id="text-org7d24c64">
 <p>
 This setting specifies the user that MPD will run as. MPD should never run as root and you may use this setting to make MPD change its user ID after initialization. This setting is disabled by default and MPD is run as the current user.
 </p>
@@ -174,8 +174,8 @@ This setting specifies the group that MPD will run as. If not specified primary 
 </div>
 </div>
 </li>
-<li><a id="org768db96"></a>Network<br />
-<div class="outline-text-5" id="text-org768db96">
+<li><a id="org81c3b8d"></a>Network<br />
+<div class="outline-text-5" id="text-org81c3b8d">
 <p>
 This setting sets the address for the daemon to listen on. Careful attention should be paid if this is assigned to anything other than the default, any. This setting can deny access to control of the daemon. Not effective if systemd socket activation is in use.
 </p>
@@ -185,16 +185,16 @@ This setting sets the address for the daemon to listen on. Careful attention sho
 </div>
 </div>
 </li>
-<li><a id="org5d2379f"></a>Unix Socket<br />
-<div class="outline-text-5" id="text-org5d2379f">
+<li><a id="orgdf30138"></a>Unix Socket<br />
+<div class="outline-text-5" id="text-orgdf30138">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">bind_to_address                "~/.mpd/socket"</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org05cfb2c"></a>Port<br />
-<div class="outline-text-5" id="text-org05cfb2c">
+<li><a id="orgbe3e7d7"></a>Port<br />
+<div class="outline-text-5" id="text-orgbe3e7d7">
 <p>
 This setting is the TCP port that is desired for the daemon to get assigned to.
 </p>
@@ -204,8 +204,8 @@ This setting is the TCP port that is desired for the daemon to get assigned to.
 </div>
 </div>
 </li>
-<li><a id="org70edeac"></a>Log Level<br />
-<div class="outline-text-5" id="text-org70edeac">
+<li><a id="org21cb359"></a>Log Level<br />
+<div class="outline-text-5" id="text-org21cb359">
 <p>
 Suppress all messages below the given threshold.  Use "verbose" for troubleshooting. Available setting arguments are "notice", "info", "verbose", "warning" and "error".
 </p>
@@ -215,8 +215,8 @@ Suppress all messages below the given threshold.  Use "verbose" for troubleshoot
 </div>
 </div>
 </li>
-<li><a id="orge344c17"></a>Restore Paused<br />
-<div class="outline-text-5" id="text-orge344c17">
+<li><a id="orgc70aded"></a>Restore Paused<br />
+<div class="outline-text-5" id="text-orgc70aded">
 <p>
 Setting "restore_paused" to "yes" puts MPD into pause mode instead of starting playback after startup.
 </p>
@@ -226,8 +226,8 @@ Setting "restore_paused" to "yes" puts MPD into pause mode instead of starting p
 </div>
 </div>
 </li>
-<li><a id="org99d8616"></a>Absolute Path in Playlists<br />
-<div class="outline-text-5" id="text-org99d8616">
+<li><a id="orgc39eb4c"></a>Absolute Path in Playlists<br />
+<div class="outline-text-5" id="text-orgc39eb4c">
 <p>
 This setting enables MPD to create playlists in a format usable by other music players.
 </p>
@@ -237,8 +237,8 @@ This setting enables MPD to create playlists in a format usable by other music p
 </div>
 </div>
 </li>
-<li><a id="org8068ffd"></a>Metadata Used<br />
-<div class="outline-text-5" id="text-org8068ffd">
+<li><a id="orgd6ef3b3"></a>Metadata Used<br />
+<div class="outline-text-5" id="text-orgd6ef3b3">
 <p>
 This setting defines a list of tag types that will be extracted during the audio file discovery process. The complete list of possible values can be found in the user manual.
 </p>
@@ -248,8 +248,8 @@ This setting defines a list of tag types that will be extracted during the audio
 </div>
 </div>
 </li>
-<li><a id="org6d3cf01"></a>Automatic Updates<br />
-<div class="outline-text-5" id="text-org6d3cf01">
+<li><a id="org2cfb1dc"></a>Automatic Updates<br />
+<div class="outline-text-5" id="text-org2cfb1dc">
 <p>
 This setting enables automatic update of MPD's database when files in music_directory are changed.
 </p>
@@ -259,8 +259,8 @@ This setting enables automatic update of MPD's database when files in music_dire
 </div>
 </div>
 </li>
-<li><a id="orgda79602"></a>Limit Watched Directories<br />
-<div class="outline-text-5" id="text-orgda79602">
+<li><a id="orgcb8878b"></a>Limit Watched Directories<br />
+<div class="outline-text-5" id="text-orgcb8878b">
 <p>
 Limit the depth of the directories being watched, 0 means only watch the music directory itself.  There is no limit by default.
 </p>
@@ -270,8 +270,8 @@ Limit the depth of the directories being watched, 0 means only watch the music d
 </div>
 </div>
 </li>
-<li><a id="org0f5666b"></a>Symbolic Links Behavior<br />
-<div class="outline-text-5" id="text-org0f5666b">
+<li><a id="org1b9253e"></a>Symbolic Links Behavior<br />
+<div class="outline-text-5" id="text-org1b9253e">
 <p>
 If this setting is set to "yes", MPD will discover audio files by following
 symbolic links outside of the configured music_directory.
@@ -291,8 +291,8 @@ symbolic links inside of the configured music_directory.
 </div>
 </div>
 </li>
-<li><a id="org716a8a9"></a>Zeroconf / Avahi Service Discovery<br />
-<div class="outline-text-5" id="text-org716a8a9">
+<li><a id="orgb2db6a8"></a>Zeroconf / Avahi Service Discovery<br />
+<div class="outline-text-5" id="text-orgb2db6a8">
 <p>
 If this setting is set to "yes", service information will be published with Zeroconf / Avahi.
 </p>
@@ -311,8 +311,8 @@ The argument to this setting will be the Zeroconf / Avahi unique name for this M
 </div>
 </li>
 
-<li><a id="org136be3e"></a>Permissions<br />
-<div class="outline-text-5" id="text-org136be3e">
+<li><a id="org5e0a361"></a>Permissions<br />
+<div class="outline-text-5" id="text-org5e0a361">
 <p>
 If this setting is set, MPD will require password authorization. The password
 setting can be specified multiple times for different password profiles.
@@ -331,8 +331,8 @@ This setting specifies the permissions a user has who has not yet logged in.
 </div>
 </div>
 </li>
-<li><a id="org8cd35e7"></a>Database<br />
-<div class="outline-text-5" id="text-org8cd35e7">
+<li><a id="orgf79d2cf"></a>Database<br />
+<div class="outline-text-5" id="text-orgf79d2cf">
 <p>
 An example of a database section instead of the old 'db_file' setting. It enables mounting other storages into the music directory.
 </p>
@@ -359,8 +359,8 @@ An example of database config for a satellite setup
 </div>
 </div>
 </li>
-<li><a id="orgd66f4d6"></a>Input<br />
-<div class="outline-text-5" id="text-orgd66f4d6">
+<li><a id="org73a3974"></a>Input<br />
+<div class="outline-text-5" id="text-org73a3974">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">input</span> {
 plugin <span style="color: #bc8f8f;">"curl"</span>
@@ -372,8 +372,8 @@ plugin <span style="color: #bc8f8f;">"curl"</span>
 </div>
 </div>
 </li>
-<li><a id="org0c8cef9"></a>Audio Output<br />
-<div class="outline-text-5" id="text-org0c8cef9">
+<li><a id="org366141f"></a>Audio Output<br />
+<div class="outline-text-5" id="text-org366141f">
 <p>
 MPD supports various audio output types, as well as playing through multiple audio outputs at the same time, through multiple audio_output settings blocks. Setting this block is optional, though the server will only attempt autodetection for one sound card.
 </p>
@@ -596,10 +596,10 @@ format          <span style="color: #bc8f8f;">"44100:16:2"</span>
 </div>
 </div>
 </li>
-<li><a id="org043b317"></a>Normalization automatic volume adjustments ##################################<br />
+<li><a id="orgd182004"></a>Normalization automatic volume adjustments<br />
 <ul class="org-ul">
-<li><a id="org6111457"></a>Replaygain<br />
-<div class="outline-text-6" id="text-org6111457">
+<li><a id="orgba16a8c"></a>Replaygain<br />
+<div class="outline-text-6" id="text-orgba16a8c">
 <p>
 This setting specifies the type of ReplayGain to use. This setting can have the argument "off", "album", "track" or "auto". "auto" is a special mode that chooses between "track" and "album" depending on the current state of random playback. If random playback is enabled then "track" mode is used. See <a href="https://wiki.hydrogenaud.io/index.php?title=Replaygain">https://wiki.hydrogenaud.io/index.php?title=Replaygain</a> for more details about ReplayGain.This setting is off by default.
 </p>
@@ -609,8 +609,8 @@ This setting specifies the type of ReplayGain to use. This setting can have the 
 </div>
 </div>
 </li>
-<li><a id="orgcfc33b1"></a>Preamp<br />
-<div class="outline-text-6" id="text-orgcfc33b1">
+<li><a id="org6fafa73"></a>Preamp<br />
+<div class="outline-text-6" id="text-org6fafa73">
 <p>
 This setting sets the pre-amp used for files that have ReplayGain tags. By default this setting is disabled.
 </p>
@@ -620,8 +620,8 @@ This setting sets the pre-amp used for files that have ReplayGain tags. By defau
 </div>
 </div>
 </li>
-<li><a id="org0501261"></a>Missing Preamp<br />
-<div class="outline-text-6" id="text-org0501261">
+<li><a id="orgb0885b6"></a>Missing Preamp<br />
+<div class="outline-text-6" id="text-orgb0885b6">
 <p>
 This setting sets the pre-amp used for files that do NOT have ReplayGain tags. By default this setting is disabled.
 </p>
@@ -631,8 +631,8 @@ This setting sets the pre-amp used for files that do NOT have ReplayGain tags. B
 </div>
 </div>
 </li>
-<li><a id="orgb18749a"></a>Limit<br />
-<div class="outline-text-6" id="text-orgb18749a">
+<li><a id="orgf74b580"></a>Limit<br />
+<div class="outline-text-6" id="text-orgf74b580">
 <p>
 This setting enables or disables ReplayGain limiting. MPD calculates actual amplification based on the ReplayGain tags and replaygain_preamp / replaygain_missing_preamp setting. If replaygain_limit is enabled MPD will never amplify audio signal above its original level. If replaygain_limit is disabled such amplification might occur. By default this setting is enabled.
 </p>
@@ -642,8 +642,8 @@ This setting enables or disables ReplayGain limiting. MPD calculates actual ampl
 </div>
 </div>
 </li>
-<li><a id="orgf7894e2"></a>Volume Normalization<br />
-<div class="outline-text-6" id="text-orgf7894e2">
+<li><a id="orgad84757"></a>Volume Normalization<br />
+<div class="outline-text-6" id="text-orgad84757">
 <p>
 This setting enables on-the-fly normalization volume adjustment. This will result in the volume of all playing audio to be adjusted so the output has equal "loudness". This setting is disabled by default.
 </p>
@@ -655,8 +655,8 @@ This setting enables on-the-fly normalization volume adjustment. This will resul
 </li>
 </ul>
 </li>
-<li><a id="org37b45c7"></a>Character Encoding<br />
-<div class="outline-text-5" id="text-org37b45c7">
+<li><a id="orgbe1c68f"></a>Character Encoding<br />
+<div class="outline-text-5" id="text-orgbe1c68f">
 <p>
 If file or directory names do not display correctly for your locale then you may need to modify this setting.
 </p>
@@ -670,17 +670,17 @@ If file or directory names do not display correctly for your locale then you may
 </div>
 </div>
 
-<div id="outline-container-org894ec61" class="outline-3">
-<h3 id="org894ec61">ncmpcpp</h3>
-<div class="outline-text-3" id="text-org894ec61">
+<div id="outline-container-orge0fd34d" class="outline-3">
+<h3 id="orge0fd34d">ncmpcpp</h3>
+<div class="outline-text-3" id="text-orge0fd34d">
 </div>
-<div id="outline-container-org6a479a8" class="outline-4">
-<h4 id="org6a479a8">Directories</h4>
-<div class="outline-text-4" id="text-org6a479a8">
+<div id="outline-container-org0a32c29" class="outline-4">
+<h4 id="org0a32c29">Directories</h4>
+<div class="outline-text-4" id="text-org0a32c29">
 </div>
 <ul class="org-ul">
-<li><a id="org187f7a6"></a>NCMPCPP Directory<br />
-<div class="outline-text-5" id="text-org187f7a6">
+<li><a id="org6d25936"></a>NCMPCPP Directory<br />
+<div class="outline-text-5" id="text-org6d25936">
 <p>
 Directory for storing ncmpcpp related files.  Changing it is useful if you want to store everything somewhere else and provide command line setting for alternative location to config file which defines that while launching <i>ncmpcpp</i>.
 </p>
@@ -690,8 +690,8 @@ Directory for storing ncmpcpp related files.  Changing it is useful if you want 
 </div>
 </div>
 </li>
-<li><a id="org190f82b"></a>Lyrics Directory<br />
-<div class="outline-text-5" id="text-org190f82b">
+<li><a id="orgaf47343"></a>Lyrics Directory<br />
+<div class="outline-text-5" id="text-orgaf47343">
 <p>
 Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other MPD clients (eg. ncmpc) also use that location.
 </p>
@@ -703,45 +703,45 @@ Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other MP
 </li>
 </ul>
 </div>
-<div id="outline-container-org789bc12" class="outline-4">
-<h4 id="org789bc12">Connections</h4>
-<div class="outline-text-4" id="text-org789bc12">
+<div id="outline-container-orgf600e56" class="outline-4">
+<h4 id="orgf600e56">Connections</h4>
+<div class="outline-text-4" id="text-orgf600e56">
 </div>
 <ul class="org-ul">
-<li><a id="orgcff7569"></a>MPD Host<br />
-<div class="outline-text-5" id="text-orgcff7569">
+<li><a id="orgfb70012"></a>MPD Host<br />
+<div class="outline-text-5" id="text-orgfb70012">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_host = localhost</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org595f3af"></a>MPD Port<br />
-<div class="outline-text-5" id="text-org595f3af">
+<li><a id="orgb79cf93"></a>MPD Port<br />
+<div class="outline-text-5" id="text-orgb79cf93">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_port = 6600</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org2806e27"></a>MPD Password<br />
-<div class="outline-text-5" id="text-org2806e27">
+<li><a id="org8c558e0"></a>MPD Password<br />
+<div class="outline-text-5" id="text-org8c558e0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_password = ""</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org12b4ab0"></a>MPD Connection Timeout<br />
-<div class="outline-text-5" id="text-org12b4ab0">
+<li><a id="org5ee69d0"></a>MPD Connection Timeout<br />
+<div class="outline-text-5" id="text-org5ee69d0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_connection_timeout = 5</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org51ce695"></a>MPD Music Directory<br />
-<div class="outline-text-5" id="text-org51ce695">
+<li><a id="org23fbe36"></a>MPD Music Directory<br />
+<div class="outline-text-5" id="text-org23fbe36">
 <p>
 Needed for tag editor and file operations to work.
 </p>
@@ -751,16 +751,16 @@ Needed for tag editor and file operations to work.
 </div>
 </div>
 </li>
-<li><a id="orgc370a8b"></a>MPD Crossfade Time<br />
-<div class="outline-text-5" id="text-orgc370a8b">
+<li><a id="org2809e41"></a>MPD Crossfade Time<br />
+<div class="outline-text-5" id="text-org2809e41">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">#</span><span style="color: #b22222;">mpd_crossfade_time = 5</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org074e318"></a>Exclusion Pattern<br />
-<div class="outline-text-5" id="text-org074e318">
+<li><a id="orgb13deca"></a>Exclusion Pattern<br />
+<div class="outline-text-5" id="text-orgb13deca">
 <p>
 Exclude pattern for random song action <a href="http://www.boost.org/doc/libs/1_46_1/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html">http://www.boost.org/doc/libs/1_46_1/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html</a>
 </p>
@@ -770,8 +770,8 @@ Exclude pattern for random song action <a href="http://www.boost.org/doc/libs/1_
 </div>
 </div>
 </li>
-<li><a id="org4632e51"></a>Music Visualizer<br />
-<div class="outline-text-5" id="text-org4632e51">
+<li><a id="org410616b"></a>Music Visualizer<br />
+<div class="outline-text-5" id="text-org410616b">
 <p>
 In order to make music visualizer work with MPD you need to use the fifo output. Its format parameter has to be set to 44100:16:1 for mono visualization or 44100:16:2 for stereo visualization. As an example here is the relevant section for mpd.conf:
 </p>
@@ -930,8 +930,8 @@ Use log scaling for the frequency spectrum axes
 </div>
 </div>
 </li>
-<li><a id="org8705e6f"></a>System Encoding<br />
-<div class="outline-text-5" id="text-org8705e6f">
+<li><a id="org381fa3a"></a>System Encoding<br />
+<div class="outline-text-5" id="text-org381fa3a">
 <p>
 ncmpcpp should detect your charset encoding but if it failed to do so, you can specify charset encoding you are using here.
 Note: You can see whether your ncmpcpp build supports charset detection by checking output of `ncmpcpp &#x2013;version`.
@@ -943,8 +943,8 @@ Note: Since MPD uses UTF-8 by default, setting this option makes sense only if y
 </div>
 </div>
 </li>
-<li><a id="org2c8e096"></a>Delays<br />
-<div class="outline-text-5" id="text-org2c8e096">
+<li><a id="orgb9578e0"></a>Delays<br />
+<div class="outline-text-5" id="text-orgb9578e0">
 <p>
 Time of inactivity (in seconds) after playlist highlighting will be disabled
 (0 = always on).
@@ -963,8 +963,8 @@ Defines how long messages are supposed to be visible.
 </div>
 </div>
 </li>
-<li><a id="orge147bda"></a>Song Format<br />
-<div class="outline-text-5" id="text-orge147bda">
+<li><a id="orgb805ab3"></a>Song Format<br />
+<div class="outline-text-5" id="text-orgb805ab3">
 <p>
 For a song format you can use:
 </p>
@@ -1120,8 +1120,8 @@ Note: Below variables are used for sorting songs in browser.  The sort mode dete
 </div>
 </div>
 </li>
-<li><a id="orgac67a0a"></a>columns settings<br />
-<div class="outline-text-5" id="text-orgac67a0a">
+<li><a id="org7a3bb6d"></a>columns settings<br />
+<div class="outline-text-5" id="text-org7a3bb6d">
 <p>
 Syntax of song columns list format is "column column etc."
 Syntax for each column is:
@@ -1158,8 +1158,8 @@ You can also:
 </div>
 </div>
 </li>
-<li><a id="org2a62379"></a>various settings<br />
-<div class="outline-text-5" id="text-org2a62379">
+<li><a id="orga226a41"></a>various settings<br />
+<div class="outline-text-5" id="text-orga226a41">
 <p>
 Note: Custom command that will be executed each time song changes. Useful for notifications etc.
 </p>
@@ -1595,8 +1595,8 @@ Note: set to yes if external editor is a console application.
 </div>
 </div>
 </li>
-<li><a id="org1864894"></a>Colors Definitions<br />
-<div class="outline-text-5" id="text-org1864894">
+<li><a id="org4c18d78"></a>Colors Definitions<br />
+<div class="outline-text-5" id="text-org4c18d78">
 <p>
 It is possible to set a background color by setting a color value "&lt;foreground&gt;_&lt;background&gt;", e.g. red_black will set foregound color to red and background color to black.
 In addition, for terminals that support 256 colors it is possible to set one of them by using a number in range [1, 256] instead of color name, e.g. numerical value corresponding to red_black is 2_1. To find out if the terminal supports 256 colors, run ncmpcpp and check out the bottom of the help screen for list of available colors and their numerical values.
@@ -1695,9 +1695,9 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
 </li>
 </ul>
 </div>
-<div id="outline-container-org0cc8aa4" class="outline-4">
-<h4 id="org0cc8aa4">bindings</h4>
-<div class="outline-text-4" id="text-org0cc8aa4">
+<div id="outline-container-org72248c6" class="outline-4">
+<h4 id="org72248c6">bindings</h4>
+<div class="outline-text-4" id="text-org72248c6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- conf -*-</span>
 def_key <span style="color: #bc8f8f;">"mouse"</span>
@@ -2133,13 +2133,13 @@ def_key <span style="color: #bc8f8f;">"q"</span>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcd2865c" class="outline-3">
-<h3 id="orgcd2865c">Scripts</h3>
-<div class="outline-text-3" id="text-orgcd2865c">
+<div id="outline-container-org42e77bf" class="outline-3">
+<h3 id="org42e77bf">Scripts</h3>
+<div class="outline-text-3" id="text-org42e77bf">
 </div>
-<div id="outline-container-orga23c43d" class="outline-4">
-<h4 id="orga23c43d">mpd-coverart</h4>
-<div class="outline-text-4" id="text-orga23c43d">
+<div id="outline-container-orgcc6e077" class="outline-4">
+<h4 id="orgcc6e077">mpd-coverart</h4>
+<div class="outline-text-4" id="text-orgcc6e077">
 <p>
 This version uses the <code>mpc</code> commands from the <i>mpd</i> package.
 </p>
@@ -2177,7 +2177,7 @@ notify-send -r 27072 <span style="color: #bc8f8f;">"$(playerctl metadata --all-p
 <div id="postamble" class="status">
 <p class="date">Date: 2024-11-06 Wed 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-05-10 Sat 16:01</p>
+<p class="date">Created: 2025-05-10 Sat 16:12</p>
 </div>
 </body>
 </html>
