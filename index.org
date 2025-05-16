@@ -395,6 +395,9 @@ If file or directory names do not display correctly for your locale then you may
 :END:
 #+caption: ncmpcpp
 [[https://alexforsale.github.io/dotfiles-i3/assets/img/ncmpcpp-Peek-2025-05-16_16-06.gif]]
+My favorite /MPD/ client. Has its own hooks on every state changes, very useful for notification.
+#+caption: MPD cover art notification
+[[./assets/img/mpd-coverart-2025-05-16_20-38.png][file:./assets/img/mpd-coverart-2025-05-16_20-38.png]]
 *** Directories
 **** NCMPCPP Directory
 Directory for storing ncmpcpp related files.  Changing it is useful if you want to store everything somewhere else and provide command line setting for alternative location to config file which defines that while launching /ncmpcpp/.
@@ -438,6 +441,8 @@ Exclude pattern for random song action http://www.boost.org/doc/libs/1_46_1/libs
   #random_exclude_pattern = "^(temp|midi_songs).*"
 #+end_src
 **** Music Visualizer
+#+caption: ncmpcpp visualizer
+[[./assets/img/mpd-visualizer-2025-05-16_20-40.png][file:./assets/img/mpd-visualizer-2025-05-16_20-40.png]]
 In order to make music visualizer work with MPD you need to use the fifo output. Its format parameter has to be set to 44100:16:1 for mono visualization or 44100:16:2 for stereo visualization. As an example here is the relevant section for mpd.conf:
 #+begin_src conf
   ##
