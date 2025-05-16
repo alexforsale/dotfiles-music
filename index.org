@@ -1088,11 +1088,11 @@ Note: due to technical limitations of older ncurses version, if 256 colors are u
 #+begin_src conf
   active_window_border = red
 #+end_src
-*** bindings
+*** Bindings
 :PROPERTIES:
 :header-args: :tangle .config/ncmpcpp/bindings :mkdirp t
 :END:
-
+The keybindings used inside /ncmpcpp/.
 #+begin_src conf
   # -*- conf -*-
   def_key "mouse"
