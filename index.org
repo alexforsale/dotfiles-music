@@ -25,6 +25,7 @@
 :PROPERTIES:
 :header-args: :tangle .config/mpd/mpd.conf :mkdirp t
 :END:
+MPD is an audio player that has a server-client architecture. It plays audio files, organizes playlists and maintains a music database, all while using very few resources. In order to interface with it, a separate client is needed[fn:1].
 *** Files And Directories
 **** Music Directory
 This setting controls the top directory which MPD will search to discover the available audio files and add them to the daemon's online database. This setting defaults to the XDG directory, otherwise the music directory will be be disabled and audio files will only be accepted over ipc socket (using =file://= protocol) or streaming files over an accepted protocol.
@@ -392,6 +393,8 @@ If file or directory names do not display correctly for your locale then you may
 :PROPERTIES:
 :header-args: :tangle .config/ncmpcpp/config :mkdirp t
 :END:
+#+caption: ncmpcpp
+[[https://alexforsale.github.io/dotfiles-i3/assets/img/ncmpcpp-Peek-2025-05-16_16-06.gif]]
 *** Directories
 **** NCMPCPP Directory
 Directory for storing ncmpcpp related files.  Changing it is useful if you want to store everything somewhere else and provide command line setting for alternative location to config file which defines that while launching /ncmpcpp/.
@@ -1546,3 +1549,7 @@ This version uses /playerctl/, for /mpd/ it also needed /mpd-mpris/ started.
 
   notify-send -r 27072 "$(playerctl metadata --all-players --format '{{title}}')" "$(playerctl metadata --all-players --format '{{artist}} - {{title}}')\nfrom the album: $(playerctl metadata --all-players --format '{{album}}')" -i "${cover}"
 #+end_src
+
+* Footnotes
+
+[fn:1] https://wiki.archlinux.org/title/Music_Player_Daemon
