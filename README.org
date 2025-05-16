@@ -14,12 +14,13 @@
 
 #+begin_html
 <a href="https://raw.githubusercontent.com/alexforsale/dotfiles-music/main/LICENSE.md">
-<img alt="GPLv3" src="https://img.shields.io/github/license/alexforsale/dotfiles-music" />
+<img alt="GPLv3" src="https://img.shields.io/github/license/alexforsale/dotfiles-music"/>
 </a>
 
 <a href="https://github.com/alexforsale/dotfiles-music/actions/workflows/publish.yml">
-<img alt="Build status" src="https://github.com/alexforsale/dotfiles-music/actions/workflows/publish.yml/badge.svg" />
+<img alt="Build status" src="https://github.com/alexforsale/dotfiles-music/actions/workflows/publish.yml/badge.svg"/>
 </a>
 #+end_html
 
 * About
+This repository is a part of a collection of my [[https://github.com/alexforsale/dotfiles/][dotfiles]]. Please see [[./index.org][index.org]] for details.
