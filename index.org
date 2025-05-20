@@ -761,7 +761,7 @@ Note: Possible display modes: classic, columns.
 #+end_src
 
 #+begin_src conf
-  #seek_time = 1
+  seek_time = 5
 #+end_src
 
 #+begin_src conf
@@ -1218,8 +1218,14 @@ The keybindings used inside /ncmpcpp/.
   def_key "h"
    master_screen
 
+  # def_key "left"
+  #  volume_down
+
   def_key "left"
-   volume_down
+   seek_backward
+
+  def_key "right"
+   seek_forward
 
   def_key "h"
    volume_down
