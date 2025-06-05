@@ -1558,7 +1558,7 @@ This version uses /playerctl/, for /mpd/ it also needed /mpd-mpris/ started.
   album="$(playerctl metadata xesam:album)"
   cover="$(playerctl metadata mpris:artUrl)"
 
-  notify-send -r 27072 "$(playerctl metadata --all-players --format '{{title}}')" "$(playerctl metadata --all-players --format '{{artist}} - {{title}}')\nfrom the album: $(playerctl metadata --all-players --format '{{album}}')" -i "${cover}"
+  notify-send -r 27072 "$(playerctl metadata --all-players --format '{{title}}')" "$(playerctl metadata --all-players --format '{{artist}}')\nfrom the album: $(playerctl metadata --all-players --format '{{album}}')" -i "${cover}"
 #+end_src
 
 * Footnotes
