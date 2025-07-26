@@ -388,7 +388,9 @@ If file or directory names do not display correctly for your locale then you may
 #+begin_src conf
   #filesystem_charset		"UTF-8"
 #+end_src
-
+*** Other dependencies
+**** mpd-mpris
+This is needed for controlling /mpd/ via /playerctl/.
 ** ncmpcpp
 :PROPERTIES:
 :header-args: :tangle .config/ncmpcpp/config :mkdirp t
