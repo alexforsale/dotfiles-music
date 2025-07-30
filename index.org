@@ -1516,6 +1516,8 @@ Inside the search engine
   def_key "A"
       add
 #+end_src
+** MPDScribble
+A daemon for /last.fm/ scrobbling. Not necessarily a must-have application, but I like storing my listening history. And it also support /libre.fm/.
 ** Scripts
 *** mpd-coverart
 :PROPERTIES:
